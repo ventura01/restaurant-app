@@ -6,12 +6,12 @@ type Props = {};
 
 const MenuPage = (props: Props) => {
   return (
-    <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)]">
+    <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] justify-center items-center">
       {menu.map((category) => (
         <Link
           key={category.id}
           href={`/menu/${category.slug}`}
-          className="w-full bg-cover p-8 md:h-1/2"
+          className="w-full bg-cover p-8 md:h-1/3"
           style={{ backgroundImage: `url(${category.img})` }}
         >
           <div className={`text-${category.color} w-1/2 gap-y-8 flex flex-col`}>

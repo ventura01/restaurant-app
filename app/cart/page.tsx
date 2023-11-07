@@ -50,7 +50,7 @@ const CartPage = (props: Props) => {
           <span className="cursor-pointer">X</span>
         </div>
       </div>
-      <div className="bg-gray-100 flex flex-col justify-center md:px-6">
+      <div className="bg-gray-100 flex flex-col justify-center md:px-6 md:gap-y-5">
         <div className="flex justify-between px-4">
           <span className="font-semibold">Subtotal (3 Items)</span>
           <span className="font-bold">$64.90</span>
