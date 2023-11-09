@@ -7,6 +7,7 @@ import { navLinks } from "@/data";
 import Link from "next/link";
 import CartIcon from "./CartIcon";
 import { Phone } from "@phosphor-icons/react";
+import UserLinks from "./UserLinks";
 
 type Props = {};
 
@@ -31,23 +32,7 @@ const Navbar = (props: Props) => {
       </div>
       <Menu size={24} menuStyles="fill-red-500" />
       <div className="md:flex gap-x-4 hidden">
-        {!user ? (
-          <Link
-            className="uppercase"
-            // onClick={() => setOpen(false)}
-            href="/login"
-          >
-            Login
-          </Link>
-        ) : (
-          <Link
-            className="uppercase"
-            // onClick={() => setOpen(false)}
-            href="/orders"
-          >
-            Orders
-          </Link>
-        )}
+        <UserLinks />
         <CartIcon size={20} color="text-red-500" />
       </div>
     </nav>

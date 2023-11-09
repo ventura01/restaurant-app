@@ -22,9 +22,9 @@ const Price = ({ price, id, options }: Props) => {
   return (
     <div className="flex flex-col gap-4">
       <div>
-        <h2 className="text-xl font-black">${total.toFixed(2)}</h2>
+        <h2 className="text-xl text-center md:text-left font-black">${total.toFixed(2)}</h2>
       </div>
-      <div className="flex justify-between sm:w-[70%]">
+      <div className="flex justify-between sm:w-[50%]">
         {options?.map((option, index) => (
           <button
             className="p-2 ring-1 ring-red-500 rounded-md min-w-[6rem]"
@@ -40,7 +40,7 @@ const Price = ({ price, id, options }: Props) => {
         ))}
       </div>
       <div className="flex">
-        <div className="flex items-center justify-between ring-1 ring-red-500 px-4 w-56">
+        <div className="flex items-center justify-between ring-1 ring-red-500 px-4 w-56 ">
           <div>
             <span>Cantidad</span>
           </div>
