@@ -11,11 +11,11 @@ export const footerLinks = [
   {
     title: "acerca",
     links: [
-      { title: "preguntas frecuentes", url: "/faq" },
-      { title: "centro de ayuda", url: "/help" },
-      { title: "blog", url: "/blog" },
-      { title: "términos y condiciones", url: "/terms" },
-      { title: "política de privacidad", url: "/privacy" },
+      { title: "preguntas frecuentes", url: "/" },
+      { title: "centro de ayuda", url: "/" },
+      { title: "blog", url: "/" },
+      { title: "términos y condiciones", url: "/" },
+      { title: "política de privacidad", url: "/" },
     ],
   },
   {
@@ -23,7 +23,7 @@ export const footerLinks = [
     links: [
       { title: "eventos", url: "/" },
       { title: "socios comerciales", url: "/" },
-      { title: "historia", url: "/history" },
+      { title: "historia", url: "/" },
     ],
   },
 ];
@@ -249,9 +249,6 @@ export const featuredProducts: Products = [
   },
 ];
 
-
-
-
 export const pizzas: Products = [
   {
     id: 1,
@@ -402,7 +399,6 @@ export const singleProduct: Product = {
     },
   ],
 };
-
 
 type Menu = {
   id: number;

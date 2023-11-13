@@ -3,7 +3,7 @@ import { MenuType } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const gatData = async () => {
+const getData = async () => {
   const res = await fetch("http://localhost:3000/api/categories", {
     cache: "no-store",
   });
@@ -16,7 +16,7 @@ const gatData = async () => {
 type Props = {};
 
 const MenuPage = async (props: Props) => {
-  const menu:MenuType = await gatData();
+  const menu:MenuType = await getData();
   return (
     <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] justify-center items-center">
       {menu.map((category) => (
